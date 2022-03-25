@@ -1,0 +1,38 @@
+body {
+  background-color: rgb(170, 209, 243);
+}
+
+.task {
+  display: inline;
+}
+
+.taskBut {
+  margin-left: 1rem;
+}
+
+#root {
+  display: grid;
+  text-align: center;
+  grid-template-areas:
+    "title title"
+    "addTask addTask"
+    "ToDo Complete"
+    "clear clear";
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.title {
+  grid-area: title;
+}
+.addTask {
+  grid-area: addTask;
+}
+.ToDo {
+  grid-area: ToDo;
+}
+.completed {
+  grid-area: Complete;
+}
+.clearTask {
+  grid-area: clear;
+}
